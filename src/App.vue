@@ -18,6 +18,7 @@
           <el-menu-item index="/case">经典案例</el-menu-item>
           <el-menu-item index="/goin">走进科建</el-menu-item>
           <el-menu-item index="/download">下载APP</el-menu-item>
+          <el-menu-item index="/admin">管理界面</el-menu-item>
         </el-menu>
       </el-header>
       <el-main>

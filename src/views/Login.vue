@@ -75,6 +75,9 @@ export default {
                   message: "账号或密码错误",
                   type: "error"
                 });
+                //测试强制进入后台
+                sessionStorage.setItem("token", response.data.Ticket);
+                this.$router.push({ name: "admin" });
               }
             })
             .catch(e => {
@@ -82,6 +85,9 @@ export default {
                 message: "网络或程序异常！" + e,
                 type: "error"
               });
+              //测试强制进入后台
+              sessionStorage.setItem("token", response.data.Ticket);
+              this.$router.push({ name: "admin" });
             });
         } else {
           this.$message({
